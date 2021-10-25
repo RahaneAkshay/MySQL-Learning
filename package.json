@@ -1,0 +1,20 @@
+{
+  "name": "node-MySQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.11.4",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
