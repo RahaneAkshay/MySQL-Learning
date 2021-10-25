@@ -63,3 +63,22 @@ exports.router.get("/fetch", function (req, res) { return __awaiter(void 0, void
         }
     });
 }); });
+exports.router.get("/create", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var result, e_2;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, connecton_1.default.execute("insert into student(name,roll_no) values(?,?)", [req.body.name, req.body.roll_no])];
+            case 1:
+                result = _a.sent();
+                res.status(200).send(result);
+                return [3 /*break*/, 3];
+            case 2:
+                e_2 = _a.sent();
+                res.status(200).send(e_2);
+                return [3 /*break*/, 3];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); });
